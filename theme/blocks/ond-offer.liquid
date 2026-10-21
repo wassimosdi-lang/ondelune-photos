@@ -105,7 +105,8 @@
           const opt = this.querySelector('.ond-offer__opt--q' + q);
           const total = opt.querySelector('.ond-offer__now').textContent.trim();
           const names = [...opt.querySelectorAll('.ond-offer__row input:checked')].map((i) => i.dataset.name);
-          const label = opt.dataset.label + ' · ' + names.join(' + ');
+          const cnt = {}; names.forEach((n) => { cnt[n] = (cnt[n] || 0) + 1; });
+          const label = opt.dataset.label + ' · ' + Object.entries(cnt).map(([n, c]) => (c > 1 ? c + ' × ' : '') + n).join(' + ');
           if (priceEl && priceEl.textContent.trim() !== total) { priceEl.textContent = total; priceEl.dataset.ondPack = '1'; }
           if (varEl && varEl.textContent.trim() !== label) { varEl.textContent = label; varEl.dataset.ondPack = '1'; }
           if (qNum && qNum.textContent !== String(q)) qNum.textContent = String(q);
