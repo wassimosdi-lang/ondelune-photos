@@ -1,220 +1,221 @@
 {
- "sections": {
-  "hero": {
-   "type": "ond-hero",
-   "settings": {
-    "height": 60,
-    "show_card": true,
-    "media_position": 3,
-    "card_tag": "Livré avec ses accessoires",
-    "heading": "Un cadeau original qui se découvre en musique.",
-    "subheading": "Un petit instrument en acier, livré avec ses maillets, son livret et sa housse. Pas besoin de savoir jouer : ses 11 notes sont accordées pour sonner ensemble.",
-    "button_label": "Offrir l'Ondelune Mini",
-    "button_link": "shopify://products/ondelune-mini-steel-tongue-drum-16-cm-11-notes"
-   },
-   "blocks": {
-    "g1": {
-     "type": "guarantee",
-     "settings": {
-      "text": "Maillets, livret et housse inclus"
-     }
+  "sections": {
+    "hero": {
+      "type": "ond-hero",
+      "settings": {
+        "height": 60,
+        "show_card": true,
+        "media_position": 3,
+        "card_tag": "Livré avec ses accessoires",
+        "heading": "Un cadeau original qui se découvre en musique.",
+        "subheading": "Un petit instrument en acier, livré avec ses maillets, son livret et sa housse. Pas besoin de savoir jouer : ses 11 notes sont accordées pour sonner ensemble.",
+        "button_label": "Offrir l'Ondelune Mini",
+        "button_link": "shopify://products/ondelune-mini-steel-tongue-drum-16-cm-11-notes"
+      },
+      "blocks": {
+        "g1": {
+          "type": "guarantee",
+          "settings": {
+            "text": "Maillets, livret et housse inclus"
+          }
+        },
+        "g2": {
+          "type": "guarantee",
+          "settings": {
+            "text": "14 jours pour changer d'avis"
+          }
+        },
+        "g3": {
+          "type": "guarantee",
+          "settings": {
+            "text": "Livraison suivie estimée en 5 jours"
+          }
+        }
+      },
+      "block_order": [
+        "g1",
+        "g2",
+        "g3"
+      ]
     },
-    "g2": {
-     "type": "guarantee",
-     "settings": {
-      "text": "14 jours pour changer d'avis"
-     }
+    "gift": {
+      "type": "ond-gift",
+      "settings": {
+        "heading": "Pourquoi il plaît à offrir",
+        "text": "On ouvre le coffret, on effleure une première note, et une mélodie se forme. Un cadeau original pour un proche curieux, un anniversaire ou les fêtes.",
+        "points": "Rien à prévoir : maillets, protège-doigts, livret et housse sont inclus\nAucune expérience musicale nécessaire pour en profiter\n6 coloris pour s'accorder aux goûts de chacun",
+        "show_season": true,
+        "season_text": "Pour les fêtes : livré dans son coffret avec tous ses accessoires.",
+        "media_position": 3,
+        "button_label": "Choisir le coloris",
+        "button_link": "shopify://products/ondelune-mini-steel-tongue-drum-16-cm-11-notes",
+        "bg": "ivory"
+      }
     },
-    "g3": {
-     "type": "guarantee",
-     "settings": {
-      "text": "Livraison suivie estimée en 5 jours"
-     }
+    "demo": {
+      "type": "ond-sound-demo",
+      "settings": {
+        "heading": "Écouter le son de l'Ondelune",
+        "text": "Le vrai son de l'instrument, enregistré sans musique ajoutée. Pensez à activer le son de votre appareil.",
+        "bg": "beige"
+      },
+      "blocks": {
+        "s1": {
+          "type": "sample",
+          "settings": {
+            "title": "Ondelune Mini",
+            "caption": "Son réel, sans musique ajoutée",
+            "audio_url": "https://cdn.shopify.com/s/files/1/1086/2375/7652/files/ondelune-mini-son-reel.mp3?v=1792603330"
+          }
+        }
+      },
+      "block_order": [
+        "s1"
+      ]
+    },
+    "box": {
+      "type": "ond-box",
+      "settings": {
+        "heading": "Ce que la personne recevra",
+        "text": "Tout le nécessaire pour commencer dès l'ouverture du colis.",
+        "media_position": 5,
+        "bg": "white"
+      },
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "title": "L'Ondelune Mini",
+            "detail": "16 cm · 11 notes numérotées"
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "title": "2 maillets",
+            "detail": "Pour un son plus présent"
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "title": "Protège-doigts",
+            "detail": "À enfiler pour jouer du bout des doigts"
+          }
+        },
+        "i4": {
+          "type": "item",
+          "settings": {
+            "title": "Livret de partitions",
+            "detail": "Pour suivre des airs connus"
+          }
+        },
+        "i5": {
+          "type": "item",
+          "settings": {
+            "title": "Housse de transport",
+            "detail": "Pour le ranger ou l'emporter"
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3",
+        "i4",
+        "i5"
+      ]
+    },
+    "feature": {
+      "type": "ond-feature",
+      "settings": {
+        "product": "ondelune-mini-steel-tongue-drum-16-cm-11-notes",
+        "badge": "",
+        "eyebrow": "Le cadeau",
+        "heading": "Ondelune Mini",
+        "text": "Choisissez un coloris, ou composez un duo pour offrir et garder le second.",
+        "points": "Notes accordées pour sonner ensemble, sans solfège\n16 cm : se pose sur les genoux, s'emporte partout\nMaillets, protège-doigts, livret et housse inclus",
+        "button_label": "Choisir le coloris",
+        "reverse": false,
+        "bg": "ivory"
+      }
+    },
+    "reviews": {
+      "type": "ond-reviews",
+      "settings": {
+        "heading": "Ce qu'en disent nos clients",
+        "bg": "white"
+      }
+    },
+    "faq": {
+      "type": "ond-faq",
+      "settings": {
+        "heading": "Avant de commander",
+        "bg": "beige"
+      },
+      "blocks": {
+        "q1": {
+          "type": "qa",
+          "settings": {
+            "question": "La personne doit-elle savoir jouer ?",
+            "answer": "<p>Non. Les notes sont accordées pour sonner harmonieusement ensemble : chaque essai donne une mélodie.</p>"
+          }
+        },
+        "q2": {
+          "type": "qa",
+          "settings": {
+            "question": "Qu'est-ce qui est inclus ?",
+            "answer": "<p>L'Ondelune Mini, 2 maillets, des protège-doigts, un livret de partitions et une housse de transport.</p>"
+          }
+        },
+        "q3": {
+          "type": "qa",
+          "settings": {
+            "question": "Comment fonctionnent le duo et le trio ?",
+            "answer": "<p>Choisissez l'offre duo (−10 %) ou trio (−15 %) puis le coloris de chaque instrument. La remise s'applique automatiquement dans le panier.</p>"
+          }
+        },
+        "q4": {
+          "type": "qa",
+          "settings": {
+            "question": "Quel est le délai de livraison ?",
+            "answer": "<p>Livraison suivie, estimée en 5 jours. Vous recevez un numéro de suivi par e-mail dès l'expédition.</p>"
+          }
+        },
+        "q5": {
+          "type": "qa",
+          "settings": {
+            "question": "Et si le cadeau ne convient pas ?",
+            "answer": "<p>Vous disposez de 14 jours après réception pour exercer votre droit de rétractation.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4",
+        "q5"
+      ]
+    },
+    "cta": {
+      "type": "ond-cta",
+      "settings": {
+        "heading": "Offrez un moment de musique.",
+        "text": "",
+        "button_label": "Offrir l'Ondelune Mini",
+        "button_link": "shopify://products/ondelune-mini-steel-tongue-drum-16-cm-11-notes"
+      }
     }
-   },
-   "block_order": [
-    "g1",
-    "g2",
-    "g3"
-   ]
   },
-  "gift": {
-   "type": "ond-gift",
-   "settings": {
-    "heading": "Pourquoi il plaît à offrir",
-    "text": "On ouvre le coffret, on effleure une première note, et une mélodie se forme. Un cadeau original pour un proche curieux, un anniversaire ou les fêtes.",
-    "points": "Rien à prévoir : maillets, protège-doigts, livret et housse sont inclus\nAucune expérience musicale nécessaire pour en profiter\n6 coloris pour s'accorder aux goûts de chacun",
-    "show_season": true,
-    "season_text": "Pour les fêtes : livré dans son coffret avec tous ses accessoires.",
-    "media_position": 3,
-    "button_label": "Choisir le coloris",
-    "button_link": "shopify://products/ondelune-mini-steel-tongue-drum-16-cm-11-notes",
-    "bg": "ivory"
-   }
-  },
-  "demo": {
-   "type": "ond-sound-demo",
-   "settings": {
-    "heading": "Écouter le son de l'Ondelune",
-    "text": "Le vrai son de l'instrument, filmé sans musique ajoutée. Pensez à activer le son de votre appareil.",
-    "bg": "beige"
-   },
-   "blocks": {
-    "s1": {
-     "type": "sample",
-     "settings": {
-      "title": "Ondelune Mini",
-      "caption": "Son réel, sans musique ajoutée"
-     }
-    }
-   },
-   "block_order": [
-    "s1"
-   ]
-  },
-  "box": {
-   "type": "ond-box",
-   "settings": {
-    "heading": "Ce que la personne recevra",
-    "text": "Tout le nécessaire pour commencer dès l'ouverture du colis.",
-    "media_position": 5,
-    "bg": "white"
-   },
-   "blocks": {
-    "i1": {
-     "type": "item",
-     "settings": {
-      "title": "L'Ondelune Mini",
-      "detail": "16 cm · 11 notes numérotées"
-     }
-    },
-    "i2": {
-     "type": "item",
-     "settings": {
-      "title": "2 maillets",
-      "detail": "Pour un son plus présent"
-     }
-    },
-    "i3": {
-     "type": "item",
-     "settings": {
-      "title": "Protège-doigts",
-      "detail": "À enfiler pour jouer du bout des doigts"
-     }
-    },
-    "i4": {
-     "type": "item",
-     "settings": {
-      "title": "Livret de partitions",
-      "detail": "Pour suivre des airs connus"
-     }
-    },
-    "i5": {
-     "type": "item",
-     "settings": {
-      "title": "Housse de transport",
-      "detail": "Pour le ranger ou l'emporter"
-     }
-    }
-   },
-   "block_order": [
-    "i1",
-    "i2",
-    "i3",
-    "i4",
-    "i5"
-   ]
-  },
-  "feature": {
-   "type": "ond-feature",
-   "settings": {
-    "product": "ondelune-mini-steel-tongue-drum-16-cm-11-notes",
-    "badge": "",
-    "eyebrow": "Le cadeau",
-    "heading": "Ondelune Mini",
-    "text": "Choisissez un coloris, ou composez un duo pour offrir et garder le second.",
-    "points": "Notes accordées pour sonner ensemble, sans solfège\n16 cm : se pose sur les genoux, s'emporte partout\nMaillets, protège-doigts, livret et housse inclus",
-    "button_label": "Choisir le coloris",
-    "reverse": false,
-    "bg": "ivory"
-   }
-  },
-  "reviews": {
-   "type": "ond-reviews",
-   "settings": {
-    "heading": "Ce qu'en disent nos clients",
-    "bg": "white"
-   }
-  },
-  "faq": {
-   "type": "ond-faq",
-   "settings": {
-    "heading": "Avant de commander",
-    "bg": "beige"
-   },
-   "blocks": {
-    "q1": {
-     "type": "qa",
-     "settings": {
-      "question": "La personne doit-elle savoir jouer ?",
-      "answer": "<p>Non. Les notes sont accordées pour sonner harmonieusement ensemble : chaque essai donne une mélodie.</p>"
-     }
-    },
-    "q2": {
-     "type": "qa",
-     "settings": {
-      "question": "Qu'est-ce qui est inclus ?",
-      "answer": "<p>L'Ondelune Mini, 2 maillets, des protège-doigts, un livret de partitions et une housse de transport.</p>"
-     }
-    },
-    "q3": {
-     "type": "qa",
-     "settings": {
-      "question": "Comment fonctionnent le duo et le trio ?",
-      "answer": "<p>Choisissez l'offre duo (−10 %) ou trio (−15 %) puis le coloris de chaque instrument. La remise s'applique automatiquement dans le panier.</p>"
-     }
-    },
-    "q4": {
-     "type": "qa",
-     "settings": {
-      "question": "Quel est le délai de livraison ?",
-      "answer": "<p>Livraison suivie, estimée en 5 jours. Vous recevez un numéro de suivi par e-mail dès l'expédition.</p>"
-     }
-    },
-    "q5": {
-     "type": "qa",
-     "settings": {
-      "question": "Et si le cadeau ne convient pas ?",
-      "answer": "<p>Vous disposez de 14 jours après réception pour exercer votre droit de rétractation.</p>"
-     }
-    }
-   },
-   "block_order": [
-    "q1",
-    "q2",
-    "q3",
-    "q4",
-    "q5"
-   ]
-  },
-  "cta": {
-   "type": "ond-cta",
-   "settings": {
-    "heading": "Offrez un moment de musique.",
-    "text": "",
-    "button_label": "Offrir l'Ondelune Mini",
-    "button_link": "shopify://products/ondelune-mini-steel-tongue-drum-16-cm-11-notes"
-   }
-  }
- },
- "order": [
-  "hero",
-  "gift",
-  "demo",
-  "box",
-  "feature",
-  "reviews",
-  "faq",
-  "cta"
- ]
+  "order": [
+    "hero",
+    "gift",
+    "demo",
+    "box",
+    "feature",
+    "reviews",
+    "faq",
+    "cta"
+  ]
 }

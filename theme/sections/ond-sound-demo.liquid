@@ -2,6 +2,7 @@
 {%- assign has_media = false -%}
 {%- for block in section.blocks -%}{%- if block.settings.video != blank or block.settings.audio_url != blank -%}{%- assign has_media = true -%}{%- endif -%}{%- endfor -%}
 {%- if has_media or request.design_mode -%}
+<style>.ond-sample__audio{display:block;width:100%;margin-top:14px;height:44px}.ond-sample:not(:has(video)) .ond-sample__body{text-align:center;padding:24px;border-radius:20px;background:#fff;box-shadow:0 10px 30px rgba(37,40,37,.08)}</style>
 <section class="ond ond-section ond-bg-{{ section.settings.bg }}"{% if has_media %} id="ond-listen"{% endif %} aria-labelledby="ond-listen-title-{{ section.id }}">
   <div class="ond-wrap">
     <div class="ond-head ond-center">
@@ -21,7 +22,7 @@
           <div class="ond-sample__body">
             <h3 class="ond-h3">{{ block.settings.title | escape }}</h3>
             {%- if block.settings.caption != blank -%}<p style="margin:0;opacity:.8">{{ block.settings.caption | escape }}</p>{%- endif -%}
-            {%- if block.settings.audio_url != blank -%}<audio controls preload="none" src="{{ block.settings.audio_url }}"></audio>{%- endif -%}
+            {%- if block.settings.audio_url != blank -%}<audio class="ond-sample__audio" controls preload="metadata" src="{{ block.settings.audio_url }}">Votre navigateur ne lit pas l'audio.</audio>{%- endif -%}
           </div>
         </div>
         {%- endif -%}
