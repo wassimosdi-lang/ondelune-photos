@@ -319,11 +319,19 @@
         "open_first": false
        },
        "blocks": {}
+      },
+      "ond_listen": {
+       "type": "ond-listen",
+       "settings": {
+        "label": "Écouter le son de l'Ondelune"
+       },
+       "blocks": {}
       }
      },
      "block_order": [
       "group_icgrde",
       "ond_pitch",
+      "ond_listen",
       "divider_VJhene",
       "variant_picker_R3rGDr",
       "ond_offer",
@@ -350,7 +358,7 @@
    "type": "ond-sound-demo",
    "settings": {
     "heading": "Écouter le son de l'Ondelune",
-    "text": "Le son réel de l'instrument, sans musique ajoutée. Activez le son de votre appareil.",
+    "text": "Le vrai son de l'instrument, filmé sans musique ajoutée. Pensez à activer le son de votre appareil.",
     "bg": "beige"
    },
    "blocks": {
@@ -358,7 +366,7 @@
      "type": "sample",
      "settings": {
       "title": "Ondelune Mini",
-      "caption": "Son réel, enregistré sans musique ajoutée"
+      "caption": "Son réel, sans musique ajoutée"
      }
     }
    },

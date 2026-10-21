@@ -1,0 +1,19 @@
+<a href="#ond-listen" class="ond-listen" hidden {{ block.shopify_attributes }}>
+  <span class="ond-listen__ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+  {{ block.settings.label | escape }}
+</a>
+<style>
+  .ond-listen{display:inline-flex;align-items:center;gap:10px;align-self:flex-start;font-size:15px;font-weight:600;color:#34483F;text-decoration:underline;text-underline-offset:4px}
+  .ond-listen[hidden]{display:none}
+  .ond-listen__ico{width:30px;height:30px;border-radius:50%;background:#34483F;color:#F8F6F1;display:grid;place-items:center}
+  .ond-listen:focus-visible{outline:2px solid #34483F;outline-offset:3px;border-radius:6px}
+</style>
+<script>
+(function(){var a=document.currentScript.previousElementSibling.previousElementSibling;if(!a)return;
+function chk(){var t=document.getElementById('ond-listen');a.hidden=!t;}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',chk);else chk();
+a.addEventListener('click',function(e){var t=document.getElementById('ond-listen');if(!t)return;e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});var v=t.querySelector('video,audio');if(v)setTimeout(function(){v.focus({preventScroll:true})},500);});})();
+</script>
+{% schema %}
+{"name":"Ondelune – Lien écoute","settings":[{"type":"paragraph","content":"Lien vers la démonstration sonore. Il n'apparaît que si une vidéo ou un extrait audio est renseigné dans la section « Ondelune – Écoute »."},{"type":"text","id":"label","label":"Libellé","default":"Écouter le son de l'Ondelune"}],"presets":[{"name":"Ondelune – Lien écoute"}]}
+{% endschema %}

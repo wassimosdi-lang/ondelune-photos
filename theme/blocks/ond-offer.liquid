@@ -33,7 +33,7 @@
         assign each = now | divided_by: q
       -%}
       {%- if q == 1 or pct > 0 and block.settings.show_packs -%}
-      <div class="ond-offer__opt ond-offer__opt--q{{ q }}{% if q == 1 %} is-active{% endif %}{% if q == 3 %} is-minor{% endif %}">
+      <div data-label="{{ title | escape }}" class="ond-offer__opt ond-offer__opt--q{{ q }}{% if q == 1 %} is-active{% endif %}{% if q == 3 %} is-minor{% endif %}">
         <label class="ond-offer__head">
           <input type="radio" name="ond-offer-{{ block.id }}" value="{{ q }}" {% if q == 1 %}checked{% endif %}>
           <span class="ond-offer__radio" aria-hidden="true"></span>
@@ -87,6 +87,36 @@
           if (t instanceof HTMLInputElement && t.closest('variant-picker') && t.dataset.variantId) this.followMain(t.dataset.variantId);
         });
         this.sync();
+        const st = this.section?.querySelector('sticky-add-to-cart [ref="stickyBar"]');
+        if (st) new MutationObserver(() => { if (!this._applying && this.qty() > 1) requestAnimationFrame(() => this.updateSticky()); }).observe(st, { childList: true, subtree: true, characterData: true });
+      }
+      mainName() {
+        return this.section?.querySelector('variant-picker input:checked')?.value || '';
+      }
+      updateSticky() {
+        const st = this.section?.querySelector('sticky-add-to-cart'); if (!st) return;
+        const priceEl = st.querySelector('.sticky-add-to-cart__price');
+        const varEl = st.querySelector('.sticky-add-to-cart__variant');
+        const qNum = st.querySelector('[ref="quantityNumber"]');
+        const qDisp = st.querySelector('[ref="quantityDisplay"]');
+        const q = this.qty();
+        this._applying = true;
+        if (q > 1) {
+          const opt = this.querySelector('.ond-offer__opt--q' + q);
+          const total = opt.querySelector('.ond-offer__now').textContent.trim();
+          const names = [...opt.querySelectorAll('.ond-offer__row input:checked')].map((i) => i.dataset.name);
+          const label = opt.dataset.label + ' · ' + names.join(' + ');
+          if (priceEl && priceEl.textContent.trim() !== total) { priceEl.textContent = total; priceEl.dataset.ondPack = '1'; }
+          if (varEl && varEl.textContent.trim() !== label) { varEl.textContent = label; varEl.dataset.ondPack = '1'; }
+          if (qNum && qNum.textContent !== String(q)) qNum.textContent = String(q);
+          if (qDisp) qDisp.style.display = 'inline';
+        } else {
+          if (priceEl?.dataset.ondPack) { priceEl.textContent = this.querySelector('.ond-offer__opt--q1 .ond-offer__now').textContent.trim(); delete priceEl.dataset.ondPack; }
+          if (varEl?.dataset.ondPack) { varEl.textContent = this.mainName(); delete varEl.dataset.ondPack; }
+          if (qNum) qNum.textContent = '1';
+          if (qDisp) qDisp.style.display = 'none';
+        }
+        requestAnimationFrame(() => { this._applying = false; });
       }
       qty() { return Number(this.querySelector('input[name^="ond-offer-"]:checked')?.value || 1); }
       onChange(e) {
@@ -116,6 +146,7 @@
           const c = r.querySelector('input:checked'); const n = r.querySelector('[data-name]');
           if (n) n.textContent = c ? '· ' + c.dataset.name : '';
         });
+        this.updateSticky();
       }
       msg(text, error) {
         const m = this.querySelector('.ond-offer__msg'); if (!m) return;

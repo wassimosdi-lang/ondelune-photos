@@ -3,7 +3,7 @@
   "hero": {
    "type": "ond-hero",
    "settings": {
-    "height": 80,
+    "height": 60,
     "show_card": true,
     "media_position": 2,
     "card_tag": "Maillets, livret et housse inclus",
@@ -42,7 +42,7 @@
    "type": "ond-sound-demo",
    "settings": {
     "heading": "Écouter le son de l'Ondelune",
-    "text": "Le son réel de l'instrument, sans musique ajoutée. Activez le son de votre appareil.",
+    "text": "Le vrai son de l'instrument, filmé sans musique ajoutée. Pensez à activer le son de votre appareil.",
     "bg": "beige"
    },
    "blocks": {
@@ -50,7 +50,7 @@
      "type": "sample",
      "settings": {
       "title": "Ondelune Mini",
-      "caption": "Son réel, enregistré sans musique ajoutée"
+      "caption": "Son réel, sans musique ajoutée"
      }
     }
    },

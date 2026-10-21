@@ -1,0 +1,19 @@
+{{ 'ondelune-5.css' | asset_url | stylesheet_tag }}
+<div class="ond-info" style="display:grid;gap:12px" {{ block.shopify_attributes }}>
+  {%- if block.settings.l1 != blank -%}
+  <p class="ond-infoline" style="margin:0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg><span>{{ block.settings.l1 | escape }}{% if block.settings.l1_sub != blank %}<small>{{ block.settings.l1_sub | escape }}</small>{% endif %}</span></p>
+  {%- endif -%}
+  {%- if block.settings.l2 != blank -%}
+  <p class="ond-infoline" style="margin:0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg><span>{{ block.settings.l2 | escape }}</span></p>
+  {%- endif -%}
+  {%- if block.settings.l3 != blank -%}
+  <p class="ond-infoline" style="margin:0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><span>{{ block.settings.l3 | escape }}</span></p>
+  {%- endif -%}
+  {%- if block.settings.show_payment_icons and shop.enabled_payment_types.size > 0 -%}
+  <div style="display:flex;flex-wrap:wrap;gap:6px;padding-left:30px" aria-label="Moyens de paiement acceptés">{%- for type in shop.enabled_payment_types -%}{{ type | payment_type_svg_tag: class: 'ond-pay' }}{%- endfor -%}</div>
+  <style>.ond-pay{width:38px;height:auto}</style>
+  {%- endif -%}
+</div>
+{% schema %}
+{"name":"Ondelune – Infos achat","settings":[{"type":"paragraph","content":"Laissez un champ vide pour masquer la ligne."},{"type":"text","id":"l1","label":"Livraison","default":"Livraison suivie, estimée en 5 jours"},{"type":"text","id":"l1_sub","label":"Livraison – précision","default":"Numéro de suivi envoyé par e-mail"},{"type":"text","id":"l2","label":"Retours","default":"14 jours pour changer d'avis"},{"type":"text","id":"l3","label":"Paiement","default":"Paiement sécurisé"},{"type":"checkbox","id":"show_payment_icons","label":"Afficher les logos des moyens de paiement activés","default":true}],"presets":[{"name":"Ondelune – Infos achat"}]}
+{% endschema %}

@@ -1,0 +1,35 @@
+{{ 'ondelune.css' | asset_url | stylesheet_tag }}
+{%- assign has_media = false -%}
+{%- for block in section.blocks -%}{%- if block.settings.video != blank or block.settings.audio_url != blank -%}{%- assign has_media = true -%}{%- endif -%}{%- endfor -%}
+{%- if has_media or request.design_mode -%}
+<section class="ond ond-section ond-bg-{{ section.settings.bg }}"{% if has_media %} id="ond-listen"{% endif %} aria-labelledby="ond-listen-title-{{ section.id }}">
+  <div class="ond-wrap">
+    <div class="ond-head ond-center">
+      <h2 class="ond-h2" id="ond-listen-title-{{ section.id }}">{{ section.settings.heading | escape }}</h2>
+      {%- if section.settings.text != blank -%}<p class="ond-lead">{{ section.settings.text | escape }}</p>{%- endif -%}
+      {%- unless has_media -%}<p><span class="ond-todo">Section masquée pour les visiteurs tant qu'aucune vidéo ni aucun extrait audio n'est ajouté.</span></p>{%- endunless -%}
+    </div>
+    <div class="ond-grid" style="max-width:{% if section.blocks.size == 1 %}560px{% else %}none{% endif %};margin:0 auto">
+      {%- for block in section.blocks -%}
+        {%- if block.settings.video != blank or block.settings.audio_url != blank or request.design_mode -%}
+        <div class="ond-sample" {{ block.shopify_attributes }}>
+          {%- if block.settings.video != blank -%}
+            {{ block.settings.video | video_tag: controls: true, playsinline: true, preload: 'metadata', image_size: '900x' }}
+          {%- elsif request.design_mode -%}
+            <div class="ond-placeholder" style="border-radius:0;aspect-ratio:4/5">Ajoutez ici la vidéo réelle (bloc « Extrait » → Vidéo réelle)</div>
+          {%- endif -%}
+          <div class="ond-sample__body">
+            <h3 class="ond-h3">{{ block.settings.title | escape }}</h3>
+            {%- if block.settings.caption != blank -%}<p style="margin:0;opacity:.8">{{ block.settings.caption | escape }}</p>{%- endif -%}
+            {%- if block.settings.audio_url != blank -%}<audio controls preload="none" src="{{ block.settings.audio_url }}"></audio>{%- endif -%}
+          </div>
+        </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+{%- endif -%}
+{% schema %}
+{"name":"Ondelune – Écoute","settings":[{"type":"text","id":"heading","label":"Titre","default":"Écouter le son de l'Ondelune"},{"type":"textarea","id":"text","label":"Texte"},{"type":"select","id":"bg","label":"Fond","options":[{"value":"ivory","label":"Ivoire"},{"value":"beige","label":"Beige"},{"value":"white","label":"Blanc"}],"default":"beige"}],"blocks":[{"type":"sample","name":"Extrait","settings":[{"type":"text","id":"title","label":"Titre"},{"type":"text","id":"caption","label":"Description"},{"type":"video","id":"video","label":"Vidéo réelle"},{"type":"url","id":"audio_url","label":"Lien du fichier audio (Contenu > Fichiers)"}]}],"max_blocks":3,"presets":[{"name":"Ondelune – Écoute","blocks":[{"type":"sample","settings":{"title":"Ondelune Mini","caption":"Son réel, sans musique ajoutée"}}]}]}
+{% endschema %}
