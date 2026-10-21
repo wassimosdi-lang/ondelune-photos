@@ -1,0 +1,243 @@
+{
+ "sections": {
+  "hero": {
+   "type": "ond-hero",
+   "settings": {
+    "height": 80,
+    "show_card": true,
+    "media_position": 2,
+    "card_tag": "Maillets, livret et housse inclus",
+    "heading": "Votre moment de calme commence ici.",
+    "subheading": "Quelques minutes, quelques notes. Un petit instrument en acier qu'on effleure du bout des doigts. Ses 11 notes sont accordées pour sonner ensemble : on joue dès la première minute, sans solfège.",
+    "button_label": "Découvrir l'Ondelune Mini",
+    "button_link": "shopify://products/ondelune-mini-steel-tongue-drum-16-cm-11-notes"
+   },
+   "blocks": {
+    "g1": {
+     "type": "guarantee",
+     "settings": {
+      "text": "Maillets, livret et housse inclus"
+     }
+    },
+    "g2": {
+     "type": "guarantee",
+     "settings": {
+      "text": "14 jours pour changer d'avis"
+     }
+    },
+    "g3": {
+     "type": "guarantee",
+     "settings": {
+      "text": "Livraison suivie estimée en 5 jours"
+     }
+    }
+   },
+   "block_order": [
+    "g1",
+    "g2",
+    "g3"
+   ]
+  },
+  "demo": {
+   "type": "ond-sound-demo",
+   "settings": {
+    "heading": "Écouter le son de l'Ondelune",
+    "text": "Le son réel de l'instrument, sans musique ajoutée. Activez le son de votre appareil.",
+    "bg": "beige"
+   },
+   "blocks": {
+    "s1": {
+     "type": "sample",
+     "settings": {
+      "title": "Ondelune Mini",
+      "caption": "Son réel, enregistré sans musique ajoutée"
+     }
+    }
+   },
+   "block_order": [
+    "s1"
+   ]
+  },
+  "howto": {
+   "type": "ond-howto",
+   "settings": {
+    "heading": "Un rituel en trois gestes",
+    "text": "Le soir ou le week-end, quelques minutes suffisent pour ralentir.",
+    "style": "plain",
+    "bg": "ivory"
+   },
+   "blocks": {
+    "s1": {
+     "type": "step",
+     "settings": {
+      "title": "Installez-vous",
+      "text": "Un fauteuil, un coussin, l'instrument sur les genoux."
+     }
+    },
+    "s2": {
+     "type": "step",
+     "settings": {
+      "title": "Effleurez une note",
+      "text": "Du bout des doigts, sans chercher."
+     }
+    },
+    "s3": {
+     "type": "step",
+     "settings": {
+      "title": "Laissez résonner",
+      "text": "Écoutez chaque note se prolonger, puis enchaînez."
+     }
+    }
+   },
+   "block_order": [
+    "s1",
+    "s2",
+    "s3"
+   ]
+  },
+  "feature": {
+   "type": "ond-feature",
+   "settings": {
+    "product": "ondelune-mini-steel-tongue-drum-16-cm-11-notes",
+    "badge": "",
+    "eyebrow": "Votre instrument",
+    "heading": "Ondelune Mini",
+    "text": "Compact et léger, il trouve sa place sur vos genoux comme sur une étagère.",
+    "points": "Notes accordées pour sonner ensemble, sans solfège\n16 cm : se pose sur les genoux, s'emporte partout\nMaillets, protège-doigts, livret et housse inclus",
+    "button_label": "Choisir mon coloris",
+    "reverse": false,
+    "bg": "white"
+   }
+  },
+  "box": {
+   "type": "ond-box",
+   "settings": {
+    "heading": "Ce que vous recevez",
+    "text": "Tout le nécessaire pour commencer dès l'ouverture du colis.",
+    "media_position": 5,
+    "bg": "ivory"
+   },
+   "blocks": {
+    "i1": {
+     "type": "item",
+     "settings": {
+      "title": "L'Ondelune Mini",
+      "detail": "16 cm · 11 notes numérotées"
+     }
+    },
+    "i2": {
+     "type": "item",
+     "settings": {
+      "title": "2 maillets",
+      "detail": "Pour un son plus présent"
+     }
+    },
+    "i3": {
+     "type": "item",
+     "settings": {
+      "title": "Protège-doigts",
+      "detail": "À enfiler pour jouer du bout des doigts"
+     }
+    },
+    "i4": {
+     "type": "item",
+     "settings": {
+      "title": "Livret de partitions",
+      "detail": "Pour suivre des airs connus"
+     }
+    },
+    "i5": {
+     "type": "item",
+     "settings": {
+      "title": "Housse de transport",
+      "detail": "Pour le ranger ou l'emporter"
+     }
+    }
+   },
+   "block_order": [
+    "i1",
+    "i2",
+    "i3",
+    "i4",
+    "i5"
+   ]
+  },
+  "reviews": {
+   "type": "ond-reviews",
+   "settings": {
+    "heading": "Ce qu'en disent nos clients",
+    "bg": "white"
+   }
+  },
+  "faq": {
+   "type": "ond-faq",
+   "settings": {
+    "heading": "Avant de commander",
+    "bg": "beige"
+   },
+   "blocks": {
+    "q1": {
+     "type": "qa",
+     "settings": {
+      "question": "Faut-il savoir jouer de la musique ?",
+      "answer": "<p>Non. Les 11 notes sont accordées pour sonner harmonieusement ensemble : on peut improviser dès la première minute, avec les doigts ou les maillets. Les notes sont numérotées pour suivre les partitions du livret.</p>"
+     }
+    },
+    "q2": {
+     "type": "qa",
+     "settings": {
+      "question": "Le son est-il fort ?",
+      "answer": "<p>Le son est doux et cristallin. Joué avec les doigts, il reste discret ; les maillets lui donnent plus de présence.</p>"
+     }
+    },
+    "q3": {
+     "type": "qa",
+     "settings": {
+      "question": "Qu'est-ce qui est inclus ?",
+      "answer": "<p>L'Ondelune Mini, 2 maillets, des protège-doigts, un livret de partitions et une housse de transport.</p>"
+     }
+    },
+    "q4": {
+     "type": "qa",
+     "settings": {
+      "question": "Quel est le délai de livraison ?",
+      "answer": "<p>Livraison suivie, estimée en 5 jours. Vous recevez un numéro de suivi par e-mail dès l'expédition.</p>"
+     }
+    },
+    "q5": {
+     "type": "qa",
+     "settings": {
+      "question": "Puis-je changer d'avis ?",
+      "answer": "<p>Oui. Vous disposez de 14 jours après réception pour exercer votre droit de rétractation.</p>"
+     }
+    }
+   },
+   "block_order": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5"
+   ]
+  },
+  "cta": {
+   "type": "ond-cta",
+   "settings": {
+    "heading": "Votre pause musicale vous attend.",
+    "text": "",
+    "button_label": "Choisir mon Ondelune Mini",
+    "button_link": "shopify://products/ondelune-mini-steel-tongue-drum-16-cm-11-notes"
+   }
+  }
+ },
+ "order": [
+  "hero",
+  "demo",
+  "howto",
+  "feature",
+  "box",
+  "reviews",
+  "faq",
+  "cta"
+ ]
+}
