@@ -91,7 +91,7 @@
   "palette_selected_variant_text": "#252825",
   "palette_selected_variant_border": "#34483F",
   "variant_button_border_width": 1,
-  "variant_button_radius": 999,
+  "variant_button_radius": 100,
   "variant_button_width": "equal-width-buttons",
   "color_palette": {
    "background": "#F8F6F1",
