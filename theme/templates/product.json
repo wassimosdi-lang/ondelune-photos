@@ -294,7 +294,7 @@
               "settings": {
                 "l1": "Livraison suivie offerte, estimée en 5 jours",
                 "l1_sub": "Numéro de suivi envoyé par e-mail",
-                "l2": "14 jours pour changer d'avis, retour à nos frais",
+                "l2": "14 jours pour changer d'avis",
                 "l3": "Paiement sécurisé",
                 "show_payment_icons": true
               },

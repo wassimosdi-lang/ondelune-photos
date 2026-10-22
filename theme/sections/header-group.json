@@ -19,7 +19,7 @@
         "announcement_ond2": {
           "type": "_announcement",
           "settings": {
-            "text": "14 jours pour changer d'avis, retour à nos frais",
+            "text": "14 jours pour changer d'avis",
             "font": "var(--font-subheading--family)",
             "font_size": "0.75rem",
             "letter_spacing": "normal",
