@@ -28,7 +28,7 @@
         "g3": {
           "type": "guarantee",
           "settings": {
-            "text": "Livraison suivie estimée en 5 jours"
+            "text": "Livraison offerte, estimée en 5 jours"
           }
         }
       },
@@ -114,7 +114,7 @@
       "type": "ond-box",
       "settings": {
         "heading": "Ce que vous recevez",
-        "text": "Tout le nécessaire pour commencer dès l'ouverture du colis.",
+        "text": "Tout est réuni dans un coffret cadeau : on peut jouer dès l'ouverture.",
         "media_position": 5,
         "bg": "ivory"
       },
@@ -202,14 +202,14 @@
           "type": "qa",
           "settings": {
             "question": "Quel est le délai de livraison ?",
-            "answer": "<p>Livraison suivie, estimée en 5 jours. Vous recevez un numéro de suivi par e-mail dès l'expédition.</p>"
+            "answer": "<p>Livraison suivie offerte, estimée en 5 jours. Vous recevez un numéro de suivi par e-mail dès l'expédition.</p>"
           }
         },
         "q5": {
           "type": "qa",
           "settings": {
             "question": "Puis-je changer d'avis ?",
-            "answer": "<p>Oui. Vous disposez de 14 jours après réception pour exercer votre droit de rétractation.</p>"
+            "answer": "<p>Oui. Vous disposez de 14 jours après réception pour exercer votre droit de rétractation, et les frais de retour sont à notre charge.</p>"
           }
         }
       },

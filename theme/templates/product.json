@@ -292,9 +292,9 @@
             "ond_info": {
               "type": "ond-info",
               "settings": {
-                "l1": "Livraison suivie, estimée en 5 jours",
+                "l1": "Livraison suivie offerte, estimée en 5 jours",
                 "l1_sub": "Numéro de suivi envoyé par e-mail",
-                "l2": "14 jours pour changer d'avis",
+                "l2": "14 jours pour changer d'avis, retour à nos frais",
                 "l3": "Paiement sécurisé",
                 "show_payment_icons": true
               },
@@ -305,7 +305,7 @@
               "settings": {
                 "enabled": true,
                 "heading": "Une idée pour Noël",
-                "calm_text": "Livré avec tous ses accessoires : on peut en jouer dès l'ouverture du colis.",
+                "calm_text": "Livré dans son coffret cadeau avec tous ses accessoires, prêt à offrir.",
                 "rush_text": "Il reste peu de temps pour le recevoir avant Noël :",
                 "countdown_from": "2026-12-01T00:00:00+01:00",
                 "deadline": "2026-12-10T23:59:00+01:00"
@@ -417,7 +417,7 @@
       "type": "ond-box",
       "settings": {
         "heading": "Ce que vous recevez",
-        "text": "Tout le nécessaire pour commencer dès l'ouverture du colis.",
+        "text": "Tout est réuni dans un coffret cadeau : on peut jouer dès l'ouverture.",
         "media_position": 5,
         "bg": "ivory"
       },
@@ -470,10 +470,10 @@
       "type": "ond-gift",
       "settings": {
         "heading": "Un cadeau qui se découvre en musique",
-        "text": "On le déballe, on effleure une première note, et une mélodie se forme. Un cadeau original pour un proche curieux, un anniversaire ou les fêtes.",
+        "text": "On ouvre le coffret, on effleure une première note, et une mélodie se forme. Un cadeau original pour un proche curieux, un anniversaire ou les fêtes.",
         "points": "Aucune expérience musicale nécessaire pour en profiter\n6 coloris pour s'accorder aux goûts de chacun",
         "show_season": false,
-        "season_text": "Pour les fêtes : livré avec tous ses accessoires.",
+        "season_text": "Pour les fêtes : livré dans son coffret cadeau, avec tous ses accessoires.",
         "media_position": 3,
         "button_label": "",
         "button_link": "shopify://products/ondelune-mini-steel-tongue-drum-16-cm-11-notes",

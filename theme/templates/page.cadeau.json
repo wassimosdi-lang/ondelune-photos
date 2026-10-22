@@ -28,7 +28,7 @@
         "g3": {
           "type": "guarantee",
           "settings": {
-            "text": "Livraison suivie estimée en 5 jours"
+            "text": "Livraison offerte, estimée en 5 jours"
           }
         }
       },
@@ -42,10 +42,10 @@
       "type": "ond-gift",
       "settings": {
         "heading": "Pourquoi il plaît à offrir",
-        "text": "On le déballe, on effleure une première note, et une mélodie se forme. Un cadeau original pour un proche curieux, un anniversaire ou les fêtes.",
+        "text": "On ouvre le coffret, on effleure une première note, et une mélodie se forme. Un cadeau original pour un proche curieux, un anniversaire ou les fêtes.",
         "points": "Rien à prévoir : maillets, protège-doigts, livret et housse sont inclus\nAucune expérience musicale nécessaire pour en profiter\n6 coloris pour s'accorder aux goûts de chacun",
         "show_season": true,
-        "season_text": "Pour les fêtes : livré avec tous ses accessoires.",
+        "season_text": "Pour les fêtes : livré dans son coffret cadeau, avec tous ses accessoires.",
         "media_position": 3,
         "button_label": "Choisir le coloris",
         "button_link": "shopify://products/ondelune-mini-steel-tongue-drum-16-cm-11-notes",
@@ -77,7 +77,7 @@
       "type": "ond-box",
       "settings": {
         "heading": "Ce que la personne recevra",
-        "text": "Tout le nécessaire pour commencer dès l'ouverture du colis.",
+        "text": "Tout est réuni dans un coffret cadeau : on peut jouer dès l'ouverture.",
         "media_position": 5,
         "bg": "white"
       },
@@ -179,7 +179,7 @@
           "type": "qa",
           "settings": {
             "question": "Quel est le délai de livraison ?",
-            "answer": "<p>Livraison suivie, estimée en 5 jours. Vous recevez un numéro de suivi par e-mail dès l'expédition.</p>"
+            "answer": "<p>Livraison suivie offerte, estimée en 5 jours. Vous recevez un numéro de suivi par e-mail dès l'expédition.</p>"
           }
         },
         "q5": {
