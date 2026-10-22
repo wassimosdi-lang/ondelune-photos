@@ -89,7 +89,9 @@
         this.section = document.getElementById('shopify-section-' + this.dataset.section);
         this.pf = this.section?.querySelector('product-form-component');
         this.addEventListener('change', (e) => this.onChange(e));
-        this.pf?.addEventListener('submit', (e) => this.onSubmit(e), true);
+        // Écoute sur window en phase de capture : le thème Horizon intercepte « submit » au niveau du document,
+        // il faut donc passer avant lui pour que le duo et le trio ne déclenchent pas aussi l'ajout natif d'un seul instrument.
+        window.addEventListener('submit', (e) => { if (this.isConnected && this.pf && this.pf.contains(e.target)) this.onSubmit(e); }, true);
         this.section?.addEventListener('change', (e) => {
           const t = e.target;
           if (t instanceof HTMLInputElement && t.closest('variant-picker') && t.dataset.variantId) this.followMain(t.dataset.variantId);
