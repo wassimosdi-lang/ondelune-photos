@@ -6,7 +6,7 @@
         "height": 60,
         "show_card": true,
         "media_position": 2,
-        "card_tag": "Maillets, livret et housse inclus",
+        "card_tag": "6 coloris au choix",
         "heading": "Pas besoin d'être musicien pour commencer.",
         "subheading": "Un petit instrument en acier qu'on effleure du bout des doigts. Ses 11 notes sont accordées pour sonner ensemble : on joue dès la première minute, sans solfège.",
         "button_label": "Découvrir l'Ondelune Mini",
@@ -79,7 +79,7 @@
       "type": "ond-split",
       "settings": {
         "heading": "Pourquoi les notes sonnent bien ensemble",
-        "text": "<p>Chaque languette découpée dans l'acier produit une note. Les 11 notes appartiennent à la même gamme : quel que soit l'ordre dans lequel vous les jouez, elles s'accordent entre elles.</p><p>Les languettes sont numérotées : le livret inclus indique quels numéros jouer pour retrouver des airs connus.</p>",
+        "text": "<p>Chaque languette découpée dans l'acier produit une note. Les 11 notes appartiennent à la même gamme : quel que soit l'ordre dans lequel vous les jouez, elles s'accordent entre elles.</p><p>Le livret de partitions inclus vous guide pour retrouver des airs connus.</p>",
         "bg": "white",
         "reverse": true
       }
@@ -190,7 +190,7 @@
           "type": "qa",
           "settings": {
             "question": "Faut-il savoir jouer de la musique ?",
-            "answer": "<p>Non. Les 11 notes sont accordées pour sonner harmonieusement ensemble : on peut improviser dès la première minute, avec les doigts ou les maillets. Les notes sont numérotées pour suivre les partitions du livret.</p>"
+            "answer": "<p>Non. Les 11 notes sont accordées pour sonner harmonieusement ensemble : on peut improviser dès la première minute, avec les doigts ou les maillets.</p>"
           }
         },
         "q2": {

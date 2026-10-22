@@ -6,7 +6,7 @@
         "height": 60,
         "show_card": true,
         "media_position": 2,
-        "card_tag": "Maillets, livret et housse inclus",
+        "card_tag": "6 coloris au choix",
         "heading": "Votre moment de calme commence ici.",
         "subheading": "Quelques minutes, quelques notes. Un petit instrument en acier qu'on effleure du bout des doigts. Ses 11 notes sont accordées pour sonner ensemble : on joue dès la première minute, sans solfège.",
         "button_label": "Découvrir l'Ondelune Mini",
@@ -103,7 +103,7 @@
         "badge": "",
         "eyebrow": "Votre instrument",
         "heading": "Ondelune Mini",
-        "text": "Compact et léger, il trouve sa place sur vos genoux comme sur une étagère.",
+        "text": "Compact, il trouve sa place sur vos genoux comme sur une étagère.",
         "points": "Notes accordées pour sonner ensemble, sans solfège\n16 cm : se pose sur les genoux, s'emporte partout\nMaillets, protège-doigts, livret et housse inclus",
         "button_label": "Choisir mon coloris",
         "reverse": false,
@@ -181,7 +181,7 @@
           "type": "qa",
           "settings": {
             "question": "Faut-il savoir jouer de la musique ?",
-            "answer": "<p>Non. Les 11 notes sont accordées pour sonner harmonieusement ensemble : on peut improviser dès la première minute, avec les doigts ou les maillets. Les notes sont numérotées pour suivre les partitions du livret.</p>"
+            "answer": "<p>Non. Les 11 notes sont accordées pour sonner harmonieusement ensemble : on peut improviser dès la première minute, avec les doigts ou les maillets.</p>"
           }
         },
         "q2": {

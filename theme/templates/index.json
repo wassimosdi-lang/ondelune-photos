@@ -6,9 +6,9 @@
         "height": 60,
         "show_card": true,
         "media_position": 2,
-        "card_tag": "Maillets, livret et housse inclus",
-        "heading": "Quelques notes pour s'évader du quotidien.",
-        "subheading": "Un petit instrument en acier qu'on effleure du bout des doigts. Ses 11 notes sont accordées pour sonner ensemble : on joue dès la première minute, sans solfège.",
+        "card_tag": "6 coloris au choix",
+        "heading": "Le tongue drum qui se joue sans solfège.",
+        "subheading": "L'Ondelune Mini est un petit instrument en acier de 16 cm : on effleure ses 11 notes du bout des doigts, et une mélodie apparaît dès la première minute.",
         "button_label": "Découvrir l'Ondelune Mini",
         "button_link": "shopify://products/ondelune-mini-steel-tongue-drum-16-cm-11-notes"
       },
@@ -167,10 +167,10 @@
       "type": "ond-gift",
       "settings": {
         "heading": "Un cadeau qui se découvre en musique",
-        "text": "On ouvre le coffret, on effleure une première note, et une mélodie se forme. Un cadeau original pour un proche curieux, un anniversaire ou les fêtes.",
-        "points": "Rien à prévoir : maillets, protège-doigts, livret et housse sont inclus\nAucune expérience musicale nécessaire pour en profiter\n6 coloris pour s'accorder aux goûts de chacun",
+        "text": "On le déballe, on effleure une première note, et une mélodie se forme. Un cadeau original pour un proche curieux, un anniversaire ou les fêtes.",
+        "points": "Aucune expérience musicale nécessaire pour en profiter\n6 coloris pour s'accorder aux goûts de chacun",
         "show_season": false,
-        "season_text": "Pour les fêtes : livré dans son coffret avec tous ses accessoires.",
+        "season_text": "Pour les fêtes : livré avec tous ses accessoires.",
         "media_position": 3,
         "button_label": "Offrir l'Ondelune Mini",
         "button_link": "shopify://products/ondelune-mini-steel-tongue-drum-16-cm-11-notes",
@@ -195,7 +195,7 @@
           "type": "qa",
           "settings": {
             "question": "Faut-il savoir jouer de la musique ?",
-            "answer": "<p>Non. Les 11 notes sont accordées pour sonner harmonieusement ensemble : on peut improviser dès la première minute, avec les doigts ou les maillets. Les notes sont numérotées pour suivre les partitions du livret.</p>"
+            "answer": "<p>Non. Les 11 notes sont accordées pour sonner harmonieusement ensemble : on peut improviser dès la première minute, avec les doigts ou les maillets.</p>"
           }
         },
         "q2": {

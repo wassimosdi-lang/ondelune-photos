@@ -305,7 +305,7 @@
               "settings": {
                 "enabled": true,
                 "heading": "Une idée pour Noël",
-                "calm_text": "Livré avec ses accessoires dans son coffret, prêt à être offert.",
+                "calm_text": "Livré avec tous ses accessoires : on peut en jouer dès l'ouverture du colis.",
                 "rush_text": "Il reste peu de temps pour le recevoir avant Noël :",
                 "countdown_from": "2026-12-01T00:00:00+01:00",
                 "deadline": "2026-12-10T23:59:00+01:00"
@@ -316,7 +316,8 @@
               "type": "ond-desc-accordion",
               "settings": {
                 "show_intro": false,
-                "open_first": false
+                "open_first": false,
+                "hide_titles": "Comment on en joue, Dans le coffret, Inclus"
               },
               "blocks": {}
             },
@@ -469,10 +470,10 @@
       "type": "ond-gift",
       "settings": {
         "heading": "Un cadeau qui se découvre en musique",
-        "text": "On ouvre le coffret, on effleure une première note, et une mélodie se forme. Un cadeau original pour un proche curieux, un anniversaire ou les fêtes.",
-        "points": "Rien à prévoir : maillets, protège-doigts, livret et housse sont inclus\nAucune expérience musicale nécessaire pour en profiter\n6 coloris pour s'accorder aux goûts de chacun",
+        "text": "On le déballe, on effleure une première note, et une mélodie se forme. Un cadeau original pour un proche curieux, un anniversaire ou les fêtes.",
+        "points": "Aucune expérience musicale nécessaire pour en profiter\n6 coloris pour s'accorder aux goûts de chacun",
         "show_season": false,
-        "season_text": "Pour les fêtes : livré dans son coffret avec tous ses accessoires.",
+        "season_text": "Pour les fêtes : livré avec tous ses accessoires.",
         "media_position": 3,
         "button_label": "",
         "button_link": "shopify://products/ondelune-mini-steel-tongue-drum-16-cm-11-notes",
@@ -500,41 +501,17 @@
             "answer": "<p>Choisissez l'offre duo (−10 %) ou trio (−15 %) puis le coloris de chaque instrument. La remise s'applique automatiquement dans le panier.</p>"
           }
         },
-        "q2": {
-          "type": "qa",
-          "settings": {
-            "question": "Quel est le délai de livraison ?",
-            "answer": "<p>Livraison suivie, estimée en 5 jours. Vous recevez un numéro de suivi par e-mail dès l'expédition.</p>"
-          }
-        },
-        "q3": {
-          "type": "qa",
-          "settings": {
-            "question": "Puis-je changer d'avis ?",
-            "answer": "<p>Oui. Vous disposez de 14 jours après réception pour exercer votre droit de rétractation.</p>"
-          }
-        },
         "q4": {
           "type": "qa",
           "settings": {
             "question": "Le son est-il fort ?",
             "answer": "<p>Le son est doux et cristallin. Joué avec les doigts, il reste discret ; les maillets lui donnent plus de présence.</p>"
           }
-        },
-        "q5": {
-          "type": "qa",
-          "settings": {
-            "question": "Comment l'entretenir ?",
-            "answer": "<p>Essuyez-le avec un chiffon doux et sec après utilisation, et rangez-le dans sa housse à l'abri de l'humidité.</p>"
-          }
         }
       },
       "block_order": [
         "q1",
-        "q2",
-        "q3",
-        "q4",
-        "q5"
+        "q4"
       ]
     }
   },

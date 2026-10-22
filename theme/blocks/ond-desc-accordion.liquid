@@ -1,0 +1,28 @@
+{{ 'ondelune-3.css' | asset_url | stylesheet_tag }}
+{%- assign p = closest.product -%}
+{%- assign parts = p.description | split: '<h3>' -%}
+{%- assign hidden_list = block.settings.hide_titles | downcase | split: ',' -%}
+{%- assign shown = 0 -%}
+<div class="ond-pacc" {{ block.shopify_attributes }}>
+  {%- for part in parts -%}
+    {%- if forloop.first -%}
+      {%- if block.settings.show_intro and part != blank -%}<div class="ond-pacc__intro">{{ part }}</div>{%- endif -%}
+    {%- else -%}
+      {%- assign bits = part | split: '</h3>' -%}
+      {%- assign t = bits.first | strip_html | strip -%}
+      {%- assign tl = t | downcase -%}
+      {%- assign skip = false -%}
+      {%- for h in hidden_list -%}{%- assign hs = h | strip -%}{%- if hs != blank and hs == tl -%}{%- assign skip = true -%}{%- endif -%}{%- endfor -%}
+      {%- unless skip -%}
+        {%- assign shown = shown | plus: 1 -%}
+        <details{% if shown == 1 and block.settings.open_first %} open{% endif %}>
+          <summary>{{ t }}</summary>
+          <div class="ond-pacc__body">{{ bits.last }}</div>
+        </details>
+      {%- endunless -%}
+    {%- endif -%}
+  {%- endfor -%}
+</div>
+{% schema %}
+{"name":"Ondelune – Description","settings":[{"type":"paragraph","content":"Découpe la description du produit en menus dépliants à chaque titre (Titre 3)."},{"type":"checkbox","id":"show_intro","label":"Afficher le paragraphe d'introduction","default":false},{"type":"checkbox","id":"open_first","label":"Ouvrir le premier menu","default":true},{"type":"text","id":"hide_titles","label":"Titres à masquer (séparés par des virgules)","info":"Pour éviter les répétitions avec les sections de la page. Le texte du produit n'est pas modifié."}],"presets":[{"name":"Ondelune – Description"}]}
+{% endschema %}
