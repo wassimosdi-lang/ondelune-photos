@@ -1,6 +1,7 @@
 {{ 'ondelune.css' | asset_url | stylesheet_tag }}
 {{ 'ondelune-2.css' | asset_url | stylesheet_tag }}
 {{ 'ondelune-5.css' | asset_url | stylesheet_tag }}
+<style>@media screen and (max-width:749px){.ond-steps{grid-template-columns:1fr!important}}</style>
 {%- assign auto_icons = 'poser,effleurer,resonner,facile' | split: ',' -%}
 <section class="ond ond-section ond-bg-{{ section.settings.bg }}">
   <div class="ond-wrap">
